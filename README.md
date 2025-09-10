@@ -80,38 +80,24 @@ The installer:
 └── welcome.asm                 # Example assembly program
 ```
 
-### Neovim Commands
- Command	Description
-:Nc	Compile + Run in DOSBox
-:Nd	Compile + Debug with AFD
-Configuration
-
-The DOSBox config (~/.dosbox/dosbox-vimasm.conf) automatically:
-
-    Mounts /usr/local/vimasm as C: drive
-
-    Sets up PATH environment
-
-    Configures prompt
-
 ## Example
-
+```
 Try the included demo:
 bash
 
 nvim ~/vimasm_demo/welcome.asm
 :Nc
-
-Troubleshooting
-
+```
+## Troubleshooting
+```
     Permission denied: Don't run installer as root
 
     Missing packages: Ensure pacman has internet access
 
     DOSBox errors: Check ~/.dosbox/dosbox-vimasm.conf exists
-
-Uninstall
-
+```
+## Uninstall
+```
 Remove the installed files:
 
 
@@ -119,7 +105,7 @@ sudo rm -rf /usr/local/vimasm
 rm -rf ~/.config/nvim/lua/vimasm
 rm -f ~/.dosbox/dosbox-vimasm.conf
 rm -rf ~/vimasm_demo
-
+```
 ## Credits
 
 Created by Syed Ali Rizvi
