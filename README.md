@@ -1,5 +1,12 @@
 # VimAsm
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Neovim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim">
+  <img src="https://img.shields.io/badge/Assembly-8A2BE2?style=for-the-badge&logo=assemblyscript&logoColor=white" alt="Assembly">
+  <img src="https://img.shields.io/badge/NASM-000000?style=for-the-badge&logo=nasm&logoColor=white" alt="NASM">
+  <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua">
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script">
+  <img src="https://img.shields.io/badge/DOSBox-000000?style=for-the-badge&logo=dosbox&logoColor=white" alt="DOSBox">
+</p>
 Neovim assembly development environment for 8088/8086 NASM programming with DOSBox integration.
 
 ## Features
@@ -11,11 +18,16 @@ Neovim assembly development environment for 8088/8086 NASM programming with DOSB
 - Includes AFD (Assembly File Debugger)
 
 ## Quick Start
+ <img width="1153" height="642" alt="image" src="https://github.com/user-attachments/assets/ecd1220f-80aa-4862-a25c-6cd14e7a47a5" />
+ <img width="849" height="531" alt="250910_20h31m44s_screenshot" src="https://github.com/user-attachments/assets/558b1709-1209-474a-a28a-471e74c71dd2" />
+ <img width="1288" height="724" alt="image" src="https://github.com/user-attachments/assets/863c7725-a10c-4e63-b22d-98a888d0264c" />
+
 
 ```bash
-# Run the installer
-chmod +x install_vimasm.sh
-./install_vimasm.sh
+# clone the repo & Run the installer
+git clone git@github.com:sanecodeguy/vimasm.git   
+chmod +x install.sh
+./install.sh
 
 .Open any .asm file in Neovim and use:
 
