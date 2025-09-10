@@ -1,6 +1,6 @@
 # VimAsm
 
-Neovim assembly development environment for 8086 NASM programming with DOSBox integration.
+Neovim assembly development environment for 8088/8086 NASM programming with DOSBox integration.
 
 ## Features
 
@@ -23,7 +23,7 @@ chmod +x install_vimasm.sh
 
     :Nd to compile and debug with AFD
 ```
-##Requirements
+## Requirements
 
     Neovim
 
@@ -33,7 +33,7 @@ chmod +x install_vimasm.sh
 
     wget, unzip
 
-##Installation Details
+## Installation Details
 
 The installer:
 
@@ -49,7 +49,7 @@ The installer:
 
     Creates demo file at ~/vimasm_demo/welcome.asm
 
-##File Structure
+### File Structure
 
 ```
 /usr/local/vimasm/
@@ -67,27 +67,9 @@ The installer:
 ~/vimasm_demo/
 └── welcome.asm                 # Example assembly program
 ```
-##Usage
-```
-    Create or open an .asm file:
-    bash
 
-    nvim hello.asm
-
-    Write your assembly code using NASM syntax
-
-    Compile and run:
-
-
-:Nc
-
-Compile and debug with AFD:
-text
-
-:Nd
-
-Neovim Commands
-Command	Description
+### Neovim Commands
+ Command	Description
 :Nc	Compile + Run in DOSBox
 :Nd	Compile + Debug with AFD
 Configuration
@@ -100,7 +82,7 @@ The DOSBox config (~/.dosbox/dosbox-vimasm.conf) automatically:
 
     Configures prompt
 
-Example
+## Example
 
 Try the included demo:
 bash
@@ -119,21 +101,20 @@ Troubleshooting
 Uninstall
 
 Remove the installed files:
-bash
+
 
 sudo rm -rf /usr/local/vimasm
 rm -rf ~/.config/nvim/lua/vimasm
 rm -f ~/.dosbox/dosbox-vimasm.conf
 rm -rf ~/vimasm_demo
 
-Credits
+## Credits
 
 Created by Syed Ali Rizvi
-Contact: rizvihuihuihui@icloud.com
-GitHub: https://github.com/sanecodeguy/vimasm
-License
 
-MIT License - feel free to modify and distribute.
-text
+## License
+
+**MIT License - feel free to modify and distribute.**
+
 
 
