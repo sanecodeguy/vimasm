@@ -62,6 +62,33 @@ chmod +x install.sh
     wget, unzip
     AFD
 
+## 🔧 Troubleshooting Protocol
+
+### DOSBox GLX Compatibility Fix
+
+**Issue**: Due to Mesa graphics library updates (version 25.2.3+), DOSBox may encounter GLX context creation errors: 
+                                  X Error: BadValue, GLXCreateContext failed
+
+  
+**Root Cause**: Mesa 25.2.3 introduced changes that break DOSBox's OpenGL rendering mode.
+
+**Solution Implemented**: The vimasm launcher now automatically applies compatibility fixes:
+- Sets `SDL_VIDEO_GL_DRIVER=1` environment variable
+- Forces `-output surface` rendering mode
+- Modifies DOSBox config to use surface output
+
+**Files Modified**:
+- `vimasm.sh` - Main launcher script with environment variables
+- `dosbox-vimasm.conf` - DOSBox configuration with surface output
+
+**For Developers**: If you need to modify DOSBox calls, ensure you include:
+```bash
+export SDL_VIDEO_GL_DRIVER=1
+dosbox -output surface [other_args]
+
+This protocol ensures vimasm works reliably across different Mesa versions and Linux distributions.
+```
+
 ## Installation Details
 
 The installer:
